@@ -1,170 +1,124 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat's Paw | 官方網站</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="theme-white.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<html class="" lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#00529B", "accent": "#00A9E0", "neutral-light": "#F0F2F5", "neutral-dark": "#1A202C", "text-light": "#1A202C", "text-dark": "#F7FAFC"}, fontFamily: {display: "Inter"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
 </head>
-<body>
-
-    <header class="site-header">
-        <div class="container">
-            <h1><a href="#"><i class="fa-solid fa-paw"></i> Cat's Paw</a></h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">關於我們</a></li>
-                    <li><a href="#team">我們的團隊</a></li>
-                    <li><a href="#services">服務項目</a></li>
-                    <li><a href="#contact">聯絡我們</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h2>創新技術，引領未來</h2>
-            <p>我們致力於提供最優質的解決方案，協助您的業務成長</p>
-            <a href="#contact" class="cta-button">立即諮詢</a>
-        </section>
-
-        <section id="about" class="content-section">
-            <div class="container">
-                <h2 class="section-title">關於我們</h2>
-                <div class="about-content">
-                    <h3>使命</h3>
-                    <p>透過不斷適應潮流的創新服務，我們為客戶提供簡單、直觀的解決方案，幫助他們輕鬆實現理想生活。</p>
-                    
-                    <h3>願景</h3>
-                    <p>成為一個能隨時代脈動持續進化的服務平台，以紮實的每一步，為更多人帶來實質的幫助與成就感。</p>
-                    
-                    <h3>核心理念</h3>
-                    <ul>
-                        <li>以人為本，直觀創新</li>
-                        <li>踏實為本，誠信至上</li>
-                        <li>成就感驅動</li>
-                    </ul>
-                </div>
+<body class="bg-neutral-light dark:bg-neutral-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+    <div class="flex h-full grow flex-col">
+        <header id="header-placeholder"></header>
+        <main class="flex-1">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+                <div class="flex min-h-[380px] flex-col items-center justify-center gap-8 rounded-xl bg-cover bg-center p-12" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVMW9s9sNcqSQYKsNBbdh2VofPQhcR-FcvN8ASf4dfJKMBerhOLqLyoQ4Ov9ZUuN-hrbDsmhu2_JiKZr_EQEDb20wgcR5Wo6ewcO21wr9u3DF6r8PmnDKUN4sLqDRq2STYWSLQDGnriUJMPF3M-YmHpASKAiFIR7O7sp07ybXiDU2eplmL58q4AQfHwaQt0rco_uZ4oKBOPm9KnfL1llczO1bOaOfxit7MzX6aZdT5SxCImxM9Yn2TWrLReUrgViIedwch_46pIHqA");'>
+    <div class="flex w-full flex-col items-center gap-4 text-center">
+        <h1 class="text-6xl font-extrabold text-white sm:text-7xl">Innovating for the Future</h1>
+        <h2 class="max-w-3xl text-lg font-normal text-gray-200">Our goal is to empower your business to grow with our high-quality solutions.</h2>
+    </div>
+    <div class="w-full flex justify-end">
+        <a href="#services" class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-accent text-white text-base font-bold shadow-lg transition-transform hover:scale-105">
+            <span class="truncate">Explore Our Services</span>
+        </a>
+    </div>
             </div>
-        </section>
-
-        <section id="team" class="content-section">
-            <div class="container">
-                <h2 class="section-title">專業團隊</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="img/CEO.jpeg" alt="團隊成員 Fremi">
-                        <h4>Fremi</h4>
-                        <p class="member-title">創辦人 & 技術長</p>
+            <section id="services" class="bg-white dark:bg-gray-800 py-16 sm:py-24">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">Our Services</h2>
                     </div>
-                    <div class="team-member">
-                        <img src="img/Wyatt.jpg" alt="團隊成員 Wyatt">
-                        <h4>Wyatt</h4>
-                        <p class="member-title">產品/企劃顧問</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="img/Phoebe.jpg" alt="團隊成員 Phoebe">
-                        <h4>Phoebe</h4>
-                        <p class="member-title">UI/UX 設計總監</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="img/Eleanor.jpg" alt="Eleanor">
-                        <h4>Eleanor</h4>
-                        <p class="member-title">廣告/行銷顧問</p>
+                    <div class="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="flex flex-col gap-4">
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCs8s9DOmPKSJgXZNoimZ-KS1FkZi6Zb8AzKC4eVo5kEdy4Q-cLol_bIVqG66VM_cWORA18aLSHSIfzP6aL4pRdqdO0FvqGNW4ZAv8yEulFFgy4iE_7cXietlLcT04rlAR9FlaWwo4km472REDG1-bkmLa9uigo-Tos9E1jCI5Q-R1ckRNp-aK6U8qhk9SXv8HTLtq_WYwvkQwGalB00tTeujNvcc6tGKrPWH9B0kWqpziIxsZ0N8-1bYw6GsURl0PpKW42X7HFkVw-");'></div>
+                            <div>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Software Development</p>
+                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">Custom software solutions to streamline your operations and enhance productivity.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3B4r56pEuZD9ERlLp1DtMEmC2_YPjtnlfMDGxfUgD8Kf2YG0yVqmRT3uGGVFGnzN7dwe49t1z5h70kL2ai_DYQOpdvcgqvwHUzhPzE7vOEzLJO7viMY4lFukVGBjO1MJcRqz63TUpNyByXQqyZQaC9LPoTYIhYgn8G-WeNDCTiu2jDX5HB0AFA6oKz6QwI_vsy3WrEEwDXhPCwgucgnuygtwjLMU1pTsomdRL5WbEpum31Bjjjd8bC4YoU0P56SzEMuJIqmHO6wN");'></div>
+                            <div>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Cloud Computing</p>
+                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">Scalable and secure cloud services to optimize your infrastructure and reduce costs.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCX83W4zSQcIO7NcthXmIRhX00Ka6cF_ciAm5rssRqZf87NY13VHHil-2aLYQSj9sommlKbGeaP0cn9NtdCNb8mTDbuAHlp3YtkD2xii75NrW0NY6e351TNpxJPOfmQQZzC0bWabCP49xJR2w0W0Y_TCSspB4daGp4GvcIV5stoljWr4EINbuzB_Br6cpfoszU6lRgNJEGGiugbW7A22nnAKt0--aONngRWZfWGSbEOVin7PQevYfUOh3oA2Xx_CRSH2Nxd9qd80iKy");'></div>
+                            <div>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">IT Consulting</p>
+                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">Expert IT consulting to align your technology strategy with your business goals.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="services" class="content-section">
-            <div class="container">
-                <h2 class="section-title">我們的服務</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fa-solid fa-rectangle-ad"></i></div>
-                        <h3>廣告投放</h3>
-                        <p>我們專精於各大平台的數位廣告操作，如 Google Ads、Facebook Ads，為您精準鎖定目標客群，最大化廣告投資報酬率。</p>
+            </section>
+            <section class="py-16 sm:py-24">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">Client Success Stories</h2>
                     </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-                        <h3>網頁SEO</h3>
-                        <p>透過全面的網站健檢與關鍵字策略，我們提升您網站在搜尋引擎的自然排名，帶來持續且免費的有效流量。</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
-                        <h3>數據分析</h3>
-                        <p>我們深入分析您的業務數據，挖掘潛在商機與洞察，提供數據驅動的決策建議，優化您的營運策略。</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fa-solid fa-users"></i></div>
-                        <h3>社群經營</h3>
-                        <p>建立並維護您的品牌社群形象，透過內容策略與粉絲互動，提升品牌忠誠度與網路聲量。</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-                        <h3>電商營運</h3>
-                        <p>提供一站式的電商營運服務，從商品上架、金流物流整合到客戶服務，協助您輕鬆管理線上商店。</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                        <h3>廣告代操</h3>
-                        <p>除了策略規劃，我們也提供專業的廣告帳戶代操服務，每日監控與優化，確保您的每一分預算都花在刀口上。</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
-                        <h3>網站架設</h3>
-                        <p>無論是形象官網或購物網站，我們提供快速、穩定的網站架設方案，讓您在網路上擁有一個專業的門面。</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fa-solid fa-store"></i></div>
-                        <h3>開店評估</h3>
-                        <p>在您投入資源前，我們提供全面的開店評估，分析市場潛力、競爭對手與成本效益，降低您的創業風險。</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fa-solid fa-chart-area"></i></div>
-                        <h3>市場分析</h3>
-                        <p>透過深入的市場調查與趨勢分析，我們幫助您了解產業動態，找到市場切入點，制定有效的市場進入策略。</p>
+                    <div class="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="flex flex-col gap-4">
+                            <div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2FOFlSnLv0vKC6E3Rg8qyugHAzdBYX3X3SYsG5rOGK7P61n1owUq_L5gN4VFh-ZG0ts7SGvxqZzUaxG-mvF5t_wNw8ZCcZnlUbkhUUWu8GTv2FJ8BAG5GdOSvVdgp46wDYJmBMLsXxNcj1JqIdliV8HEsdVMc4NUAUDcG9OREZ9vuLGEBzcr8GTKdL070zHokOHACwSKhVQcGWMXFmsTA_-y4SfMwvK2tIbhym_32A7aoU06KozgDtWN4Nj_wXpLFYWPrzURXGnHT");'></div>
+                            <div>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Transforming Retail with Innovative Software</p>
+                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">A leading retail chain improved customer engagement and sales with our custom software.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCylSHUOAox8KJIYVHoEfCZlkKBQ60UJPxNYL2kTYzcg6e1LmLZKiX61oEXRElOn32yL3uPNmapjR0NVQCO9k228Tjo-hHj-829Sj-sOt78KjEc9YLN1EW9tHwNzvkMgSx3lSPOF5vFObiEbhLJ7arVuzXsg_bzgBWmatBXzmjqUjOnsPPgAGtsHOSJUCRwoU-eQMdRBSjw-HjRVMLgfZxRMs6ghQFnOT97kgOUihgmB5tXtCjx6x_nnbMqDB594ey7cLUcTIMRyGc");'></div>
+                            <div>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Empowering Healthcare with Cloud Solutions</p>
+                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">A healthcare provider enhanced patient care and data security with our cloud services.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuASPSs8LzLxMJkMs62NX3Y6sgW2brY2mLEZGR2Kg3ZpNknvRabSSwKdNpXoT6SI7CU0htg-ZBoyYrXvkpXQq5-_nsPmwQBgaJt3QL7Tu9z8EzyAlYjImmcIUWzfsUuJPdMg-hCBgPyMEx4TIf62R6__FzbhfpGaQ3f1ue9sZITVr-3kM2UuhLKi0QizGJmYiBQ49kH_rwI5aqBrrdaC-W4nEkG5aOMBPLpgEnhidcw_yxM-5X8-EsRb21TSa0v6TLzYxFRG8SoGHo81");'></div>
+                            <div>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Driving Efficiency in Manufacturing with IT Consulting</p>
+                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">A manufacturing company optimized its processes and reduced costs with our IT consulting.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact" class="content-section">
-            <div class="container">
-                <h2 class="section-title">聯絡我們</h2>
-                <p>有任何問題或合作需求嗎？歡迎隨時與我們聯繫！</p>
-                <p>
-                    <strong>Email:</strong> <a href="mailto:service@mycompany.com">service@mycompany.com</a><br>
-                    <strong>電話:</strong> (02) 1234-5678<br>
-                    <strong>地址:</strong> 123 範例市模範路一段1號
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Cat's Paw. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
-
-    <script>
-        const backToTopButton = document.querySelector(".back-to-top");
-
-        window.addEventListener("scroll", () => {
-            // 當頁面往下滾動超過 300px 時，顯示按鈕
-            if (window.scrollY > 300) {
-                backToTopButton.classList.add("show");
-            } else {
-                backToTopButton.classList.remove("show");
-            }
-        });
-    </script>
-
-</body>
-</html>
+            </section>
+            <section class="py-16 sm:py-24">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">Our Partners</h2>
+                    </div>
+                    <div class="mt-12 grid grid-cols-2 gap-8 md:grid-cols-4 lg:gap-12">
+                        <div class="flex justify-center">
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvIGQqyklZD98VDsBqYwudM8jVfnbILplePKNi_ub9-e--_bW3Pdy-Bpr48G6qIyv5l4DVo3Lgml_Rce9sOeHRQT2E_ZlUMFQ4VpMIjvAUhKw74JpG48DyJtUyLWhKsgaFjEMLxYa0NUNW0yP1T6B3-HU6vX6jtqRfUHQN3jr4Ms6w_iFJ4aLUtGhr3yBJOortTBITy_4AnjbEMj1X4ZvOPMC-lPkeGv40l5tXllIzlERte3jJIM2pKLZtwo-DigFzb-pa3dAnNQtm");'></div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrHCARmcbzlRF_SNLn0w5_d6vvKxVdpW2didTh0CTxlx9r_edWxdctOVFYqw0KjTA5SaO3uTBY_fQTA7wdjwyXaXyKPh2efER47wj3Hu_y7r_MSGE1eXPFftLby8MR9-b2ivMrvss3mjYIAExMVCOUaFIRxl_AlrmHtl7H795ECFpyRuai2urO0BYDxZRtJSYLbtECOhIztalPqplVB_diXbxypiPGVsENEFF-3S_peOHvWedQT6bExwTbM5GfgCh8bzSYdZ-tN-QY");'></div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvh84G-9NJUAsct7fhLcOPqfC_dImd4L47F7cFnElwjXhRB-h1qiFnnvHv-RRV557dUw4hshJs2hoXTnykl6jZ1rqBPaOFnlJVqGBXfsqSyhVTtkPxlaoXkQonxA0kFFqmcqIqIcETI99iWXTvlhTNnTdjV4a72ytu_7gqcIBcqijCN_1LwpHR3JqCxq8i0IvoEMC6VQYQyqt7ydTqmg2iEUAYBq9Epv1u4MTVCbQ_FBaC8mRum7WmPBAFLHVg0dC7hFiUA13dVlrc");'></div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArEvfrN9G1cyOSdq0_c9ooZEVw_BDz2ZpXXSoyZ9rxoQPs1cVuRgSCDl_bo04zdrpP03ONpYh9R6K1c3gpKtcZkHWxPhU2t6Ufh0p_vTJyQkmBOVF-OtdFtdfVTp-qdS5EkPJXOTlRsOUTg0CFJd2yq10pGAX1tZNlNhesnAFBJGgk4jlPd5eol78P_1sw839aEs2wzJt2gh34x59y-nsmMAvtlyIX2jYDnBNLe5V3QeN50u3jpPIC_AWQu4pcItmetoC5SRJ6vujJ");'></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-16 sm:py-24">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col items-center gap-8 text-center">
+                        <h1 class="text-5xl font-extrabold tracking-tight text-text-light dark:text-text-dark sm:text-6xl">Ready to Transform Your Business?</h1>
+                        <a href="contact.html" class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-accent text-white text-base font-bold shadow-lg transition-transform hover:scale-105">
+                            <span class="truncate">Get Started</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+</main>
+</div>
+    <footer id="footer-placeholder"></footer>
+</div>
+<script src="main.js"></script>
+</body></html>
