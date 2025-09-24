@@ -1,16 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // --- Function to load HTML components ---
-    const loadComponent = (selector, url) => {
-        return fetch(url)
-            .then(response => {
-                if (!response.ok) throw new Error(`File not found: ${url}`);
-                return response.text();
-            })
-            .then(data => {
-                const element = document.querySelector(selector);
-                if (element) element.outerHTML = data;
-            });
-    };
 
     // --- Function to set the active navigation link ---
     const setActiveNavLink = () => {
@@ -36,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // --- Function to handle header shadow on scroll ---
     const handleHeaderShadow = () => {
         // Now we can select the header directly
-        const header = document.querySelector('header.sticky');
+        const header = document.querySelector('header'); // Simplified selector
         if (header) {
             if (window.scrollY > 10) { // Add shadow after scrolling down 10px
                 header.classList.add('shadow-md');
@@ -45,20 +33,39 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     };
+    
+    // Initialize all functions
+    setActiveNavLink();
+    updateHeaderLinks();
+    handleHeaderShadow(); // Initial check
+    window.addEventListener('scroll', handleHeaderShadow);
+});
 
-    // --- Combined function to run after header is loaded ---
-    const initializeHeaderAndTheme = () => {
-        setActiveNavLink();
-        updateHeaderLinks();
-        handleHeaderShadow(); // Initial check in case the page is reloaded mid-scroll
-        window.addEventListener('scroll', handleHeaderShadow);
+document.addEventListener("DOMContentLoaded", function() {
+    // --- Back to Top Button ---
+    const backToTopButton = document.getElementById('back-to-top');
+
+    const handleBackToTopVisibility = () => {
+        if (backToTopButton) {
+            // Show button after scrolling down 300px
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        }
     };
 
-    // Load components and then initialize scripts
-    Promise.all([
-        loadComponent("header#header-placeholder", "_header.html"),
-        loadComponent("footer#footer-placeholder", "_footer.html")
-    ]).then(() => {
-        initializeHeaderAndTheme();
-    }).catch(error => console.error("Error loading components:", error));
+    const scrollToTop = (event) => {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    if (backToTopButton) {
+        window.addEventListener('scroll', handleBackToTopVisibility);
+        backToTopButton.addEventListener('click', scrollToTop);
+    }
 });
