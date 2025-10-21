@@ -2,128 +2,149 @@
 <html class="" lang="en"><head>
 <meta charset="utf-8"/>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<title>Stitch Design</title>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans+TC%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Cat's Paw - 您的數位成長夥伴</title>
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#00529B", "accent": "#00A9E0", "neutral-light": "#F0F2F5", "neutral-dark": "#1A202C", "text-light": "#1A202C", "text-dark": "#F7FAFC"}, fontFamily: {display: "Inter"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
 </head>
 <body class="bg-neutral-light dark:bg-neutral-dark font-display">
 <div class="relative flex h-auto min-h-screen w-full flex-col">
-    <div class="flex h-full grow flex-col">
         <header id="header-placeholder" class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-neutral-dark/80 px-10 py-4 backdrop-blur-sm">
             <a href="index.html" class="flex items-center gap-3 text-text-light dark:text-text-dark">
-                <div class="h-8 w-8 text-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-full w-full">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 13.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-3-2c-.83 0-1.5-.67-1.5-1.5S11.67 10.5 12.5 10.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-4 0c-.83 0-1.5-.67-1.5-1.5S7.67 10.5 8.5 10.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-1-3c-.83 0-1.5-.67-1.5-1.5S6.67 7.5 7.5 7.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm8-1c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
-                    </svg>
-                </div>
+                <img src="img/logo.svg" alt="Cat's Paw Logo" class="h-8 w-8">
                 <h2 class="text-xl font-bold text-text-light dark:text-text-dark">Cat's Paw</h2>
             </a>
             <nav class="flex flex-1 justify-end gap-8">
                 <div class="flex items-center gap-8">
-                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="about.html">About Us</a>
-                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="index.html#services">Services</a>
-                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="history.html">Chronicle</a>
-                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="news.html">News</a>
-                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="contact.html">Contact</a>
-                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="faq.html">FAQ</a>
+                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="about.html">關於我們</a>
+                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="index.html#services">服務項目</a>
+                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="history.html">發展歷程</a>
+                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="news.html">最新消息</a>
+                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="contact.html">聯絡我們</a>
+                    <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="faq.html">常見問題</a>
                 </div>
                 <a href="contact.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-accent text-white text-sm font-bold shadow-md transition-transform hover:scale-105">
-                    <span class="truncate">Get Started</span>
+                    <span class="truncate">立即開始</span>
                 </a>
             </nav>
         </header>
-        <main class="flex-1">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-                <div class="flex min-h-[380px] flex-col items-center justify-center gap-8 rounded-xl bg-cover bg-center p-12" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVMW9s9sNcqSQYKsNBbdh2VofPQhcR-FcvN8ASf4dfJKMBerhOLqLyoQ4Ov9ZUuN-hrbDsmhu2_JiKZr_EQEDb20wgcR5Wo6ewcO21wr9u3DF6r8PmnDKUN4sLqDRq2STYWSLQDGnriUJMPF3M-YmHpASKAiFIR7O7sp07ybXiDU2eplmL58q4AQfHwaQt0rco_uZ4oKBOPm9KnfL1llczO1bOaOfxit7MzX6aZdT5SxCImxM9Yn2TWrLReUrgViIedwch_46pIHqA");'>
-    <div class="flex w-full flex-col items-center gap-4 text-center">
-        <h1 class="text-6xl font-extrabold text-white sm:text-7xl">Innovating for the Future</h1>
-        <h2 class="max-w-3xl text-lg font-normal text-gray-200">Our goal is to empower your business to grow with our high-quality solutions.</h2>
-    </div>
-    <div class="w-full flex justify-end">
-        <a href="#services" class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-accent text-white text-base font-bold shadow-lg transition-transform hover:scale-105">
-            <span class="truncate">Explore Our Services</span>
-        </a>
-    </div>
+        <!-- Hero Section -->
+        <div class="relative flex flex-col items-center justify-center bg-cover bg-center px-4 py-16 sm:px-6 lg:px-8 min-h-[calc(100vh-80px)]" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("img/hero-background.webp");'>
+            <div class="flex w-full max-w-7xl flex-col items-center justify-center gap-8 text-center">
+                <div class="flex w-full flex-col items-center gap-4">
+                    <h1 class="text-6xl font-extrabold text-white sm:text-7xl">創新未來．驅動成長</h1>
+                    <h2 class="max-w-3xl text-lg font-normal text-gray-200">透過高品質的解決方案，為您的業務賦能，實現卓越成長。</h2>
+                </div>
+                <!-- Key Metrics Section -->
+                <div class="mt-6 flex flex-col gap-8 text-white sm:flex-row">
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-accent">10+</p>
+                        <p class="text-sm font-medium text-gray-200">年團隊綜合經驗</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-accent">24</p>
+                        <p class="text-sm font-medium text-gray-200">小時內回覆保證</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-accent">100%</p>
+                        <p class="text-sm font-medium text-gray-200">專案進度透明化</p>
+                    </div>
+                </div>
+                <div class="flex w-full justify-center">
+                    <a href="#services" class="flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-accent px-8 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">
+                        <span class="truncate">探索我們的服務</span>
+                    </a>
+                </div>
             </div>
+        </div>
+        <main>
             <section id="services" class="bg-white dark:bg-gray-800 py-16 sm:py-24">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div class="text-center">
-                        <h2 class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">Our Services</h2>
+                        <h2 class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">我們的服務</h2>
                     </div>
-                    <div class="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="mt-12 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
                         <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCs8s9DOmPKSJgXZNoimZ-KS1FkZi6Zb8AzKC4eVo5kEdy4Q-cLol_bIVqG66VM_cWORA18aLSHSIfzP6aL4pRdqdO0FvqGNW4ZAv8yEulFFgy4iE_7cXietlLcT04rlAR9FlaWwo4km472REDG1-bkmLa9uigo-Tos9E1jCI5Q-R1ckRNp-aK6U8qhk9SXv8HTLtq_WYwvkQwGalB00tTeujNvcc6tGKrPWH9B0kWqpziIxsZ0N8-1bYw6GsURl0PpKW42X7HFkVw-");'></div>
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-1.webp");'></div>
                             <div>
-                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Software Development</p>
-                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">Custom software solutions to streamline your operations and enhance productivity.</p>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">精準廣告投放</p>
+                                <div class="service-description mt-2 text-base text-gray-600 dark:text-gray-400">
+                                    <span class="short-text">利用數據精準鎖定潛在客戶，讓產品資訊只呈現在真正需求的人前...</span>
+                                    <span class="full-text hidden">利用數據精準鎖定潛在客戶，讓產品資訊只呈現在真正需求的人前，把繁瑣的廣告設定與數據追蹤交給我們，透過透明報告清楚掌握廣告帶來的穩定成長。</span>
+                                </div>
+                                <button class="mt-4 text-sm font-semibold text-accent hover:text-primary dark:hover:text-blue-400">了解更多</button>
                             </div>
                         </div>
                         <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3B4r56pEuZD9ERlLp1DtMEmC2_YPjtnlfMDGxfUgD8Kf2YG0yVqmRT3uGGVFGnzN7dwe49t1z5h70kL2ai_DYQOpdvcgqvwHUzhPzE7vOEzLJO7viMY4lFukVGBjO1MJcRqz63TUpNyByXQqyZQaC9LPoTYIhYgn8G-WeNDCTiu2jDX5HB0AFA6oKz6QwI_vsy3WrEEwDXhPCwgucgnuygtwjLMU1pTsomdRL5WbEpum31Bjjjd8bC4YoU0P56SzEMuJIqmHO6wN");'></div>
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-2.webp");'></div>
                             <div>
-                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Cloud Computing</p>
-                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">Scalable and secure cloud services to optimize your infrastructure and reduce costs.</p>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">靜態網站架設 / SEO</p>
+                                <div class="service-description mt-2 text-base text-gray-600 dark:text-gray-400">
+                                    <span class="short-text">告別複雜後台與高昂維護費，打造極速、安全的靜態品牌門面...</span>
+                                    <span class="full-text hidden">告別複雜後台與高昂維護費，打造極速、安全的靜態品牌門面，讓您的客戶擁有最佳瀏覽體驗，品牌專業度即刻升級。透過紮實的 SEO 佈局，讓您的網頁自然搶佔 Google 排名，帶來源源不絕且零成本的高價值客戶。</span>
+                                </div>
+                                <button class="mt-4 text-sm font-semibold text-accent hover:text-primary dark:hover:text-blue-400">了解更多</button>
                             </div>
                         </div>
                         <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCX83W4zSQcIO7NcthXmIRhX00Ka6cF_ciAm5rssRqZf87NY13VHHil-2aLYQSj9sommlKbGeaP0cn9NtdCNb8mTDbuAHlp3YtkD2xii75NrW0NY6e351TNpxJPOfmQQZzC0bWabCP49xJR2w0W0Y_TCSspB4daGp4GvcIV5stoljWr4EINbuzB_Br6cpfoszU6lRgNJEGGiugbW7A22nnAKt0--aONngRWZfWGSbEOVin7PQevYfUOh3oA2Xx_CRSH2Nxd9qd80iKy");'></div>
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-3.webp");'></div>
                             <div>
-                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">IT Consulting</p>
-                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">Expert IT consulting to align your technology strategy with your business goals.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="py-16 sm:py-24">
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div class="text-center">
-                        <h2 class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">Client Success Stories</h2>
-                    </div>
-                    <div class="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-                        <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2FOFlSnLv0vKC6E3Rg8qyugHAzdBYX3X3SYsG5rOGK7P61n1owUq_L5gN4VFh-ZG0ts7SGvxqZzUaxG-mvF5t_wNw8ZCcZnlUbkhUUWu8GTv2FJ8BAG5GdOSvVdgp46wDYJmBMLsXxNcj1JqIdliV8HEsdVMc4NUAUDcG9OREZ9vuLGEBzcr8GTKdL070zHokOHACwSKhVQcGWMXFmsTA_-y4SfMwvK2tIbhym_32A7aoU06KozgDtWN4Nj_wXpLFYWPrzURXGnHT");'></div>
-                            <div>
-                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Transforming Retail with Innovative Software</p>
-                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">A leading retail chain improved customer engagement and sales with our custom software.</p>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">數據分析</p>
+                                <div class="service-description mt-2 text-base text-gray-600 dark:text-gray-400">
+                                    <span class="short-text">解讀數據找出隱藏的商業機會，讓您的決策都有數據依據...</span>
+                                    <span class="full-text hidden">解讀數據找出隱藏的商業機會，讓您的決策都有數據依據。提供報表助您精準定位營運瓶頸，將複雜數據轉化為可執行的優化洞見，告別盲目摸索！將清晰的市場地圖，產業趨勢與競爭優勢找到最有效的切入點。</span>
+                                </div>
+                                <button class="mt-4 text-sm font-semibold text-accent hover:text-primary dark:hover:text-blue-400">了解更多</button>
                             </div>
                         </div>
                         <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCylSHUOAox8KJIYVHoEfCZlkKBQ60UJPxNYL2kTYzcg6e1LmLZKiX61oEXRElOn32yL3uPNmapjR0NVQCO9k228Tjo-hHj-829Sj-sOt78KjEc9YLN1EW9tHwNzvkMgSx3lSPOF5vFObiEbhLJ7arVuzXsg_bzgBWmatBXzmjqUjOnsPPgAGtsHOSJUCRwoU-eQMdRBSjw-HjRVMLgfZxRMs6ghQFnOT97kgOUihgmB5tXtCjx6x_nnbMqDB594ey7cLUcTIMRyGc");'></div>
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-4.webp");'></div>
                             <div>
-                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Empowering Healthcare with Cloud Solutions</p>
-                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">A healthcare provider enhanced patient care and data security with our cloud services.</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuASPSs8LzLxMJkMs62NX3Y6sgW2brY2mLEZGR2Kg3ZpNknvRabSSwKdNpXoT6SI7CU0htg-ZBoyYrXvkpXQq5-_nsPmwQBgaJt3QL7Tu9z8EzyAlYjImmcIUWzfsUuJPdMg-hCBgPyMEx4TIf62R6__FzbhfpGaQ3f1ue9sZITVr-3kM2UuhLKi0QizGJmYiBQ49kH_rwI5aqBrrdaC-W4nEkG5aOMBPLpgEnhidcw_yxM-5X8-EsRb21TSa0v6TLzYxFRG8SoGHo81");'></div>
-                            <div>
-                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">Driving Efficiency in Manufacturing with IT Consulting</p>
-                                <p class="mt-1 text-base text-gray-600 dark:text-gray-400">A manufacturing company optimized its processes and reduced costs with our IT consulting.</p>
+                                <p class="text-lg font-semibold text-text-light dark:text-text-dark">電商營運 / 開店評估</p>
+                                <div class="service-description mt-2 text-base text-gray-600 dark:text-gray-400">
+                                    <span class="short-text">提供一站式營運解決方案，從上架到出貨所有流程...</span>
+                                    <span class="full-text hidden">提供一站式營運解決方案，從上架到出貨所有流程，讓電商營運時間留給產品與業務擴展，透過數據化管理，精準掌握銷售與庫存，專業服務提升顧客滿意度與回購率。可選購開店評估服務，從市場趨勢到財務預測，為您降低風險，創業計畫具體可行。協助釐清方向、定位產品與客群，提供藍圖與報告。</span>
+                                </div>
+                                <button class="mt-4 text-sm font-semibold text-accent hover:text-primary dark:hover:text-blue-400">了解更多</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="py-16 sm:py-24">
+            <!-- Our Process Section -->
+            <section class="bg-white dark:bg-gray-800 py-16 sm:py-24">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div class="text-center">
-                        <h2 class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">Our Partners</h2>
+                        <h2 class="text-base font-semibold leading-7 text-accent">我們的工作流程</h2>
+                        <p class="mt-2 text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">透明、高效，與您共創價值</p>
+                        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">採用結構化的方法，確保您的專案在每個階段都符合預期。</p>
                     </div>
-                    <div class="mt-12 grid grid-cols-2 gap-8 md:grid-cols-4 lg:gap-12">
-                        <div class="flex justify-center">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvIGQqyklZD98VDsBqYwudM8jVfnbILplePKNi_ub9-e--_bW3Pdy-Bpr48G6qIyv5l4DVo3Lgml_Rce9sOeHRQT2E_ZlUMFQ4VpMIjvAUhKw74JpG48DyJtUyLWhKsgaFjEMLxYa0NUNW0yP1T6B3-HU6vX6jtqRfUHQN3jr4Ms6w_iFJ4aLUtGhr3yBJOortTBITy_4AnjbEMj1X4ZvOPMC-lPkeGv40l5tXllIzlERte3jJIM2pKLZtwo-DigFzb-pa3dAnNQtm");'></div>
+                    <!-- Steps -->
+                    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4 lg:gap-12">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col items-center text-center">
+                            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white text-2xl font-bold">01</div>
+                            <h3 class="mt-6 text-lg font-semibold text-text-light dark:text-text-dark">探索與諮詢</h3>
+                            <p class="mt-2 text-base text-gray-600 dark:text-gray-400">深入了解您的業務目標、挑戰與期望，共同定義專案的成功樣貌。</p>
                         </div>
-                        <div class="flex justify-center">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrHCARmcbzlRF_SNLn0w5_d6vvKxVdpW2didTh0CTxlx9r_edWxdctOVFYqw0KjTA5SaO3uTBY_fQTA7wdjwyXaXyKPh2efER47wj3Hu_y7r_MSGE1eXPFftLby8MR9-b2ivMrvss3mjYIAExMVCOUaFIRxl_AlrmHtl7H795ECFpyRuai2urO0BYDxZRtJSYLbtECOhIztalPqplVB_diXbxypiPGVsENEFF-3S_peOHvWedQT6bExwTbM5GfgCh8bzSYdZ-tN-QY");'></div>
+                        <!-- Step 2 -->
+                        <div class="flex flex-col items-center text-center">
+                            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white text-2xl font-bold">02</div>
+                            <h3 class="mt-6 text-lg font-semibold text-text-light dark:text-text-dark">策略與設計</h3>
+                            <p class="mt-2 text-base text-gray-600 dark:text-gray-400">基於數據與洞察，規劃客製化策略，打造直觀的使用者介面與體驗。</p>
                         </div>
-                        <div class="flex justify-center">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvh84G-9NJUAsct7fhLcOPqfC_dImd4L47F7cFnElwjXhRB-h1qiFnnvHv-RRV557dUw4hshJs2hoXTnykl6jZ1rqBPaOFnlJVqGBXfsqSyhVTtkPxlaoXkQonxA0kFFqmcqIqIcETI99iWXTvlhTNnTdjV4a72ytu_7gqcIBcqijCN_1LwpHR3JqCxq8i0IvoEMC6VQYQyqt7ydTqmg2iEUAYBq9Epv1u4MTVCbQ_FBaC8mRum7WmPBAFLHVg0dC7hFiUA13dVlrc");'></div>
+                        <!-- Step 3 -->
+                        <div class="flex flex-col items-center text-center">
+                            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white text-2xl font-bold">03</div>
+                            <h3 class="mt-6 text-lg font-semibold text-text-light dark:text-text-dark">開發與執行</h3>
+                            <p class="mt-2 text-base text-gray-600 dark:text-gray-400">採用敏捷開發模式，高效、透明地轉化為功能完善、穩定可靠的產品。</p>
                         </div>
-                        <div class="flex justify-center">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArEvfrN9G1cyOSdq0_c9ooZEVw_BDz2ZpXXSoyZ9rxoQPs1cVuRgSCDl_bo04zdrpP03ONpYh9R6K1c3gpKtcZkHWxPhU2t6Ufh0p_vTJyQkmBOVF-OtdFtdfVTp-qdS5EkPJXOTlRsOUTg0CFJd2yq10pGAX1tZNlNhesnAFBJGgk4jlPd5eol78P_1sw839aEs2wzJt2gh34x59y-nsmMAvtlyIX2jYDnBNLe5V3QeN50u3jpPIC_AWQu4pcItmetoC5SRJ6vujJ");'></div>
+                        <!-- Step 4 -->
+                        <div class="flex flex-col items-center text-center">
+                            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white text-2xl font-bold">04</div>
+                            <h3 class="mt-6 text-lg font-semibold text-text-light dark:text-text-dark">交付與優化</h3>
+                            <p class="mt-2 text-base text-gray-600 dark:text-gray-400">產品上線後，將持續追蹤成效，並根據使用者回饋進行迭代優化。</p>
                         </div>
                     </div>
                 </div>
@@ -131,37 +152,25 @@
             <section class="py-16 sm:py-24">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div class="flex flex-col items-center gap-8 text-center">
-                        <h1 class="text-5xl font-extrabold tracking-tight text-text-light dark:text-text-dark sm:text-6xl">Ready to Transform Your Business?</h1>
+                        <h1 class="text-5xl font-extrabold tracking-tight text-text-light dark:text-text-dark sm:text-6xl">準備好開始轉型了嗎？</h1>
                         <a href="contact.html" class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-accent text-white text-base font-bold shadow-lg transition-transform hover:scale-105">
-                            <span class="truncate">Get Started</span>
+                            <span class="truncate">立即開始</span>
                         </a>
                     </div>
                 </div>
             </section>
 </main>
-</div>
     <footer id="footer-placeholder" class="border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
         <div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
             <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
-                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="about.html">About Us</a>
-                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="index.html#services">Services</a>
-                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="history.html">Chronicle</a>
-                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="news.html">News</a>
-                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="contact.html">Contact</a>
-                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="faq.html">FAQ</a>
+                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="about.html">關於我們</a>
+                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="index.html#services">服務項目</a>
+                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="history.html">發展歷程</a>
+                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="news.html">最新消息</a>
+                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="contact.html">聯絡我們</a>
+                <a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="faq.html">常見問題</a>
             </nav>
-            <div class="mt-10 flex justify-center space-x-6">
-                <a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="#">
-                    <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path></svg>
-                </a>
-                <a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="#">
-                    <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg>
-                </a>
-                <a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="#">
-                    <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg>
-                </a>
-            </div>
-            <p class="mt-10 text-center text-base text-gray-500 dark:text-gray-400">© 2024 Cat's Paw. All rights reserved.</p>
+            <p class="mt-10 text-center text-base text-gray-500 dark:text-gray-400">© 2024 Cat's Paw. 版權所有。</p>
         </div>
     </footer>
 </div>
@@ -172,4 +181,24 @@
     </svg>
 </a>
 <script src="main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const servicesSection = document.getElementById('services');
+        if (servicesSection) {
+            const buttons = servicesSection.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const descriptionContainer = button.previousElementSibling;
+                    const shortText = descriptionContainer.querySelector('.short-text');
+                    const fullText = descriptionContainer.querySelector('.full-text');
+                    
+                    shortText.classList.toggle('hidden');
+                    fullText.classList.toggle('hidden');
+                    
+                    button.textContent = fullText.classList.contains('hidden') ? '了解更多' : '收合';
+                });
+            });
+        }
+    });
+</script>
 </body></html>
