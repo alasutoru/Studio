@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans+TC%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>關於 Fermi Logan - Cat's Paw</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00529B",
+                        "accent": "#00A9E0",
+                        "neutral-light": "#F0F2F5",
+                        "neutral-dark": "#1A202C",
+                        "text-light": "#1A202C",
+                        "text-dark": "#F7FAFC"
+                    },
+                    fontFamily: {
+                        display: "Inter"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-neutral-light dark:bg-neutral-dark font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <div class="flex h-full grow flex-col">
+            <header id="header-placeholder" class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-neutral-dark/80 px-10 py-4 backdrop-blur-sm">
+                <a href="index.html" class="flex items-center gap-3 text-text-light dark:text-text-dark"><img src="img/logo.svg" alt="Cat's Paw Logo" class="h-8 w-8">
+                    <h2 class="text-xl font-bold text-text-light dark:text-text-dark">Cat's Paw</h2>
+                </a>
+                <nav class="flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-8">
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="about.html">關於我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="index.html#services">服務項目</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="history.html">發展歷程</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="news.html">最新消息</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="join-us.html">加入我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="contact.html">聯絡我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="faq.html">常見問題</a>
+                    </div>
+                    <a href="contact.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-accent text-white text-sm font-bold shadow-md transition-transform hover:scale-105">
+                        <span class="truncate">立即開始</span>
+                    </a>
+                </nav>
+            </header>
+            <main class="flex-1">
+                <div class="bg-white dark:bg-gray-800 px-6 py-16 sm:py-24 lg:px-8">
+                    <div class="mx-auto max-w-5xl">
+                        <div class="grid grid-cols-1 gap-x-12 gap-y-10 lg:grid-cols-3">
+                            <!-- Left column for image and motto -->
+                            <div class="lg:col-span-1">
+                                <img class="h-auto w-full max-w-xs mx-auto rounded-2xl object-cover shadow-lg" src="img/ceo.webp" alt="Photo of Fermi Logan">
+                                <blockquote class="mt-6 border-l-4 border-accent pl-4 italic text-gray-600 dark:text-gray-400">
+                                    「不為安逸設限，只為答案竭盡所能。」
+                                </blockquote>
+                            </div>
+
+                            <!-- Right column for text content -->
+                            <div class="lg:col-span-2">
+                                <h1 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-4xl">關於 Fermi Logan</h1>
+                                <div class="mt-8 space-y-8 text-base leading-7 text-gray-600 dark:text-gray-400">
+                                    <div>
+                                        <h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark mb-4">個人背景</h2>
+                                        <p>我是 Fermi Logan，曾任職七年 MIS 工程師。2009 年成為接案工作者，個人成立電腦維修工作室，以 3C 維護為主，之後因應市場需求，陸續增加建置網站、廣告行銷、諮詢等主要服務。</p>
+                                        <p class="mt-4">個性低調不喜歡出風頭，沒有經營任一社群，也不分享任何工作項目。對一個專業的行銷顧問來說，客戶的隱私很重要，因此我們以行銷廣告與行銷顧問為核心服務。</p>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark mb-4">經營模式：Bootstrapping</h2>
+                                        <p>我們制定 Bootstrapping 為創業模式。利用自有資金，將產品/服務變現後的利潤再次投入，待穩定利潤後再逐漸擴大規模。我們不是一次性投入大量資金，也沒有投資人干預，因此擁有完全的決策自主權。因為這樣，才能讓我們的服務長久，把風險降到最低。</p>
+                                        <p class="mt-4">用剛出社會的經驗和技術，組裝和維修電腦與網站架設，滾動營運，直到有能力租工作室。全程沒有找投資人與股東，靠服務利潤養活自己。從兩三個月一個案件，到每天至少有兩件收入，再把這些收入投入採購設備，增加服務速度。成長緩慢但穩定，至今無對外融資貸款。</p>
+                                        <p class="mt-4">這種模式的好處是不用承擔貸款和人的壓力，彈性高，可以隨著市場馬上調整方向。但缺點就是資金有限，成長速度緩慢，如果市場有立刻出現的機會時，資源不足往往會錯失。而創業者，就是要承擔所有的風險和壓力。</p>
+                                    </div>
+                                </div>
+                                <div class="mt-10">
+                                    <a href="about.html" class="text-base font-semibold text-accent hover:text-primary dark:hover:text-blue-400">← 返回團隊介紹</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="footer-placeholder"></footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

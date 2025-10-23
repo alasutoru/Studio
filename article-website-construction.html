@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans+TC%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>服務-網站建置 - Cat's Paw</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00529B",
+                        "accent": "#00A9E0",
+                        "neutral-light": "#F0F2F5",
+                        "neutral-dark": "#1A202C",
+                        "text-light": "#1A202C",
+                        "text-dark": "#F7FAFC"
+                    },
+                    fontFamily: {
+                        display: "Inter"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-neutral-light dark:bg-neutral-dark font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <div class="flex h-full grow flex-col">
+            <header id="header-placeholder" class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-neutral-dark/80 px-10 py-4 backdrop-blur-sm">
+                <a href="index.html" class="flex items-center gap-3 text-text-light dark:text-text-dark"><img src="img/logo.svg" alt="Cat's Paw Logo" class="h-8 w-8">
+                    <h2 class="text-xl font-bold text-text-light dark:text-text-dark">Cat's Paw</h2>
+                </a>
+                <nav class="flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-8">
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="about.html">關於我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="index.html#services">服務項目</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="history.html">發展歷程</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="news.html">最新消息</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="join-us.html">加入我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="contact.html">聯絡我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="faq.html">常見問題</a>
+                    </div>
+                    <a href="contact.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-accent text-white text-sm font-bold shadow-md transition-transform hover:scale-105">
+                        <span class="truncate">立即開始</span>
+                    </a>
+                </nav>
+            </header>
+            <main class="flex-1">
+                <div class="bg-white dark:bg-gray-800 px-6 py-16 sm:py-24 lg:px-8">
+                    <div class="mx-auto max-w-4xl">
+                        <!-- Header -->
+                        <div>
+                            <div class="text-center">
+                                <p class="text-base font-semibold leading-7 text-accent">服務</p>
+                                <h1 class="mt-2 text-3xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-4xl">服務-網站建置</h1>
+                            </div>
+                            <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">網站依據風格規劃，不使用套版，不會有一樣的網站。完成後有一份網站使用說明，未來可自行維護網站，或付費由我們協助。</p>
+                        </div>
+
+                        <!-- Website Types Section -->
+                        <div class="mt-16">
+                            <h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark text-center">網站規劃諮詢</h2>
+                            <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                                <div class="text-center">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white mx-auto">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6.375M9 12h6.375m-6.375 5.25h6.375M5.25 6.75h.008v.008H5.25V6.75zm.008 5.25h.008v.008H5.25v-.008zm0 5.25h.008v.008H5.25v-.008zm13.5-5.25h.008v.008h-.008v-.008zm0 5.25h.008v.008h-.008v-.008zM21 6.75h.008v.008H21V6.75z" /></svg>
+                                    </div>
+                                    <h3 class="mt-5 text-lg font-semibold text-text-light dark:text-text-dark">官方網站</h3>
+                                    <p class="mt-2 text-base text-gray-600 dark:text-gray-400 text-left">製作專業、符合風格、客製化特殊功能的正式官方網站。</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white mx-auto">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+                                    </div>
+                                    <h3 class="mt-5 text-lg font-semibold text-text-light dark:text-text-dark">個人網站</h3>
+                                    <p class="mt-2 text-base text-gray-600 dark:text-gray-400 text-left">建立符合工作者風格網站，說明服務項目，透過SEO文章加強搜尋成效。</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white mx-auto">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.438.995a6.427 6.427 0 010 .255c0 .382.145.755.438.995l1.003.827c.48.398.668 1.05.26 1.431l-1.296 2.247a1.125 1.125 0 01-1.37.49l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.063-.374-.313-.686-.645-.87a6.52 6.52 0 01-.22-.127c-.324-.196-.72-.257-1.075-.124l-1.217.456a1.125 1.125 0 01-1.37-.49l-1.296-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.437-.995a6.427 6.427 0 010-.255c0-.382-.145-.755-.437-.995l-1.004-.827a1.125 1.125 0 01-.26-1.431l1.296-2.247a1.125 1.125 0 011.37-.49l1.217.456c.355.133.75.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.213-1.28z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                    </div>
+                                    <h3 class="mt-5 text-lg font-semibold text-text-light dark:text-text-dark">客製化網站</h3>
+                                    <p class="mt-2 text-base text-gray-600 dark:text-gray-400 text-left">建立特殊動態、會員後台、金流交易的客製化網站。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Budget and Timeline Section -->
+                        <div class="mt-16 grid grid-cols-1 gap-y-10 gap-x-12 lg:grid-cols-2">
+                            <div>
+                                <h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark">預算</h2>
+                                <p class="mt-4 text-base leading-7 text-gray-600 dark:text-gray-400">收費項目會根據頁數、設計複雜度而定。我們可以一起根據您的預算進行規劃。例如：預算有限，可不請設計師，一起討論頁面設計以節省設計費；或是節省建置後台費用，改採每年固定維護方式，配合預算考量彈性開發。</p>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark">時程</h2>
+                                <p class="mt-4 text-base leading-7 text-gray-600 dark:text-gray-400">完整的網站建置流程，會依序確認主視覺風格、個別頁面設計，接著進行工程開發、修改、結案。各流程會依據複雜度制訂明確的時間表。</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Section -->
+                        <div class="mt-16">
+                            <h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark text-center">常見問題</h2>
+                            <dl class="mt-10 space-y-8 divide-y divide-gray-900/10 dark:divide-white/10">
+                                <div class="pt-8">
+                                    <dt class="text-lg font-semibold leading-7 text-text-light dark:text-text-dark">網站規劃，要懂很多術語嗎？</dt>
+                                    <dd class="mt-2 text-base leading-7 text-gray-600 dark:text-gray-400">完全不用！我們會將網站術語轉化為您能聽懂的語言。多數請我們協助建站的客戶也不一定懂網站與程式。我們的責任是理清楚您的需求，用大眾能理解的方式解釋網站運用，並提供詳細的時程與費用。</dd>
+                                </div>
+                                <div class="pt-8">
+                                    <dt class="text-lg font-semibold leading-7 text-text-light dark:text-text-dark">建立一個網站，會花很多錢嗎？</dt>
+                                    <dd class="mt-2 text-base leading-7 text-gray-600 dark:text-gray-400">網站費用是根據頁面數量與功能數來定價。在談妥需求後，我們會再根據您的預算考量調整費用，任何預算都能製作網站。預算低時，可以透過減少非必要設計、頁面、功能，討論出彼此都能接受的價格，一起完成網站製作任務。</dd>
+                                </div>
+                                <div class="pt-8">
+                                    <dt class="text-lg font-semibold leading-7 text-text-light dark:text-text-dark">建立一個網站，要花多少時間？</dt>
+                                    <dd class="mt-2 text-base leading-7 text-gray-600 dark:text-gray-400">網站製作時間會根據頁面數與功能決定。若時程較短，我們可以商討如何進行為佳。也可以先建立一款基本版型網站來應急，或是減少網站複雜度，日後再來擴充成完整網站，這些都是可以考慮的方向。</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                        <!-- Back Link -->
+                        <div class="mt-16 text-center">
+                            <a href="news.html" class="text-base font-semibold text-accent hover:text-primary dark:hover:text-blue-400">← 返回最新消息</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="footer-placeholder"></footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

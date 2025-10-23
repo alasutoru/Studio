@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans+TC%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>加入我們 - Cat's Paw</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00529B",
+                        "accent": "#00A9E0",
+                        "neutral-light": "#F0F2F5",
+                        "neutral-dark": "#1A202C",
+                        "text-light": "#1A202C",
+                        "text-dark": "#F7FAFC"
+                    },
+                    fontFamily: {
+                        display: "Inter"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-neutral-light dark:bg-neutral-dark font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <div class="flex h-full grow flex-col">
+            <header id="header-placeholder" class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-neutral-dark/80 px-10 py-4 backdrop-blur-sm">
+                <a href="index.html" class="flex items-center gap-3 text-text-light dark:text-text-dark"><img src="img/logo.svg" alt="Cat's Paw Logo" class="h-8 w-8">
+                    <h2 class="text-xl font-bold text-text-light dark:text-text-dark">Cat's Paw</h2>
+                </a>
+                <nav class="flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-8">
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="about.html">關於我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="index.html#services">服務項目</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="history.html">發展歷程</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="news.html">最新消息</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="join-us.html">加入我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="contact.html">聯絡我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="faq.html">常見問題</a>
+                    </div>
+                    <a href="contact.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-accent text-white text-sm font-bold shadow-md transition-transform hover:scale-105">
+                        <span class="truncate">立即開始</span>
+                    </a>
+                </nav>
+            </header>
+            <main class="flex-1">
+                <!-- Hero Section -->
+                <div class="bg-white dark:bg-gray-800">
+                    <div class="mx-auto max-w-7xl px-6 py-16 text-center lg:px-8">
+                        <h1 class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">與我們共創未來</h1>
+                        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">我們正在尋找才華洋溢的夥伴，一同打造改變市場的解決方案。如果您對創新充滿渴望，並樂於接受挑戰，Cat's Paw 將是您發揮潛能的最佳舞台。</p>
+                    </div>
+                </div>
+
+                <!-- Values Section -->
+                <section class="py-16 sm:py-24">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:text-center">
+                            <h2 class="text-base font-semibold leading-7 text-accent">我們的文化</h2>
+                            <p class="mt-2 text-3xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-4xl">以人為本，追求卓越</p>
+                        </div>
+                        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+                            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                                <div class="flex flex-col">
+                                    <dt class="text-base font-semibold leading-7 text-text-light dark:text-text-dark">創新與學習</dt>
+                                    <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600 dark:text-gray-400">
+                                        <p class="flex-auto">我們鼓勵團隊成員不斷探索新知，擁抱變化，並提供學習資源，讓每個人都能與公司一同成長。</p>
+                                    </dd>
+                                </div>
+                                <div class="flex flex-col">
+                                    <dt class="text-base font-semibold leading-7 text-text-light dark:text-text-dark">團隊合作</dt>
+                                    <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600 dark:text-gray-400">
+                                        <p class="flex-auto">我們相信團隊的力量大於個人。透過開放的溝通與緊密的協作，我們共同解決難題，分享成功。</p>
+                                    </dd>
+                                </div>
+                                <div class="flex flex-col">
+                                    <dt class="text-base font-semibold leading-7 text-text-light dark:text-text-dark">客戶至上</dt>
+                                    <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600 dark:text-gray-400">
+                                        <p class="flex-auto">客戶的成功就是我們的成功。我們致力於深入了解客戶需求，提供超越期待的優質服務與產品。</p>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Benefits Section -->
+                <section class="bg-white dark:bg-gray-800 py-16 sm:py-24">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:text-center">
+                            <h2 class="text-base font-semibold leading-7 text-accent">優渥的福利制度</h2>
+                            <p class="mt-2 text-3xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-4xl">照顧每一位夥伴</p>
+                            <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">我們相信，照顧好團隊成員是公司成功的基石。因此，我們提供全方位的福利，支持您的工作與生活。</p>
+                        </div>
+                        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                                <div class="relative pl-16">
+                                    <dt class="text-base font-semibold leading-7 text-text-light dark:text-text-dark">
+                                        <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                        </div>
+                                        彈性工作時間
+                                    </dt>
+                                    <dd class="mt-2 text-base leading-7 text-gray-600 dark:text-gray-400">我們提供彈性的上下班時間，讓您能更好地平衡工作與個人生活。</dd>
+                                </div>
+                                <div class="relative pl-16">
+                                    <dt class="text-base font-semibold leading-7 text-text-light dark:text-text-dark">
+                                        <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h18a2.25 2.25 0 012.25 2.25v10.5A2.25 2.25 0 0119.5 18.75H4.5A2.25 2.25 0 012.25 16.5V4.5A2.25 2.25 0 014.5 3z" /></svg>
+                                        </div>
+                                        混合式工作模式
+                                    </dt>
+                                    <dd class="mt-2 text-base leading-7 text-gray-600 dark:text-gray-400">提供遠端與辦公室混合的工作選項，讓您選擇最適合自己的工作環境。</dd>
+                                </div>
+                                <div class="relative pl-16">
+                                    <dt class="text-base font-semibold leading-7 text-text-light dark:text-text-dark">
+                                        <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg>
+                                        </div>
+                                        學習與發展補助
+                                    </dt>
+                                    <dd class="mt-2 text-base leading-7 text-gray-600 dark:text-gray-400">我們鼓勵並支持團隊成員的專業成長，提供課程與書籍的補助。</dd>
+                                </div>
+                                <div class="relative pl-16">
+                                    <dt class="text-base font-semibold leading-7 text-text-light dark:text-text-dark">
+                                        <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M-4.5 12h22.5" /></svg>
+                                        </div>
+                                        優於勞基法的休假
+                                    </dt>
+                                    <dd class="mt-2 text-base leading-7 text-gray-600 dark:text-gray-400">我們提供優於法規的帶薪年假，讓您有充足的時間休息和充電。</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Open Positions -->
+                <div class="py-16 sm:py-24">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl text-center">
+                            <h2 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-4xl">專業職缺</h2>
+                            <p class="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400">我們正在尋找優秀的人才加入我們的團隊，探索能讓您發光發熱的機會。</p>
+                        </div>
+                        <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+                            <!-- Job Card 1 -->
+                            <div class="flex flex-col justify-between rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-lg ring-1 ring-gray-900/10 dark:ring-white/10">
+                                <div>
+                                    <h3 class="text-xl font-bold leading-8 text-text-light dark:text-text-dark">資深搜尋引擎優化專員</h3>
+                                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Senior Specialist SEO</p>
+                                    <div class="mt-4 flex items-center gap-x-2">
+                                        <span class="inline-flex items-center rounded-md bg-blue-50 dark:bg-blue-900/50 px-2 py-1 text-xs font-medium text-blue-700 dark:text-blue-300 ring-1 ring-inset ring-blue-700/10 dark:ring-blue-300/20">市場行銷部</span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 dark:bg-gray-700 px-2 py-1 text-xs font-medium text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-500/10 dark:ring-gray-500/20">桃園，遠端</span>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="mt-8 block w-full rounded-md bg-accent px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">立即應徵</a>
+                            </div>
+                            <!-- Job Card 2 -->
+                            <div class="flex flex-col justify-between rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-lg ring-1 ring-gray-900/10 dark:ring-white/10">
+                                <div>
+                                    <h3 class="text-xl font-bold leading-8 text-text-light dark:text-text-dark">UI/UX 設計師</h3>
+                                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">UI/UX Designer</p>
+                                    <div class="mt-4 flex items-center gap-x-2">
+                                        <span class="inline-flex items-center rounded-md bg-blue-50 dark:bg-blue-900/50 px-2 py-1 text-xs font-medium text-blue-700 dark:text-blue-300 ring-1 ring-inset ring-blue-700/10 dark:ring-blue-300/20">產品設計部</span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 dark:bg-gray-700 px-2 py-1 text-xs font-medium text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-500/10 dark:ring-gray-500/20">桃園，遠端</span>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="mt-8 block w-full rounded-md bg-accent px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">立即應徵</a>
+                            </div>
+                            <!-- Job Card 3 -->
+                            <div class="flex flex-col justify-between rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-lg ring-1 ring-gray-900/10 dark:ring-white/10">
+                                <div>
+                                    <h3 class="text-xl font-bold leading-8 text-text-light dark:text-text-dark">前/後端開發工程師</h3>
+                                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Frontend/Backend Developer</p>
+                                    <div class="mt-4 flex items-center gap-x-2">
+                                        <span class="inline-flex items-center rounded-md bg-blue-50 dark:bg-blue-900/50 px-2 py-1 text-xs font-medium text-blue-700 dark:text-blue-300 ring-1 ring-inset ring-blue-700/10 dark:ring-blue-300/20">工程部</span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 dark:bg-gray-700 px-2 py-1 text-xs font-medium text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-500/10 dark:ring-gray-500/20">桃園，遠端</span>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="mt-8 block w-full rounded-md bg-accent px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">立即應徵</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="py-16 sm:py-24">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl text-center">
+                            <h2 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-4xl">找不到適合您的職位？</h2>
+                            <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">我們永遠歡迎有才華的您。請將您的履歷寄給我們，當有合適的機會時，我們會第一時間與您聯繫。</p>
+                            <div class="mt-10 flex items-center justify-center gap-x-6">
+                                <a href="contact.html" class="rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">主動投遞履歷</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="footer-placeholder"></footer>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="fixed bottom-8 right-8 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-accent text-white shadow-lg transition-opacity duration-300 ease-in-out opacity-0 invisible hover:bg-blue-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+    <script src="main.js"></script>
+</body>
+
+</html>
