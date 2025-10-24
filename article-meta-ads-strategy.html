@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans+TC%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>Meta廣告指標與測試策略 - Cat's Paw</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00529B",
+                        "accent": "#00A9E0",
+                        "neutral-light": "#F0F2F5",
+                        "neutral-dark": "#1A202C",
+                        "text-light": "#1A202C",
+                        "text-dark": "#F7FAFC"
+                    },
+                    fontFamily: {
+                        display: "Inter"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-neutral-light dark:bg-neutral-dark font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <div class="flex h-full grow flex-col">
+            <header id="header-placeholder" class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-neutral-dark/80 px-10 py-4 backdrop-blur-sm">
+                <a href="index.html" class="flex items-center gap-3 text-text-light dark:text-text-dark"><img src="img/logo.svg" alt="Cat's Paw Logo" class="h-8 w-8">
+                    <h2 class="text-xl font-bold text-text-light dark:text-text-dark">Cat's Paw</h2>
+                </a>
+                <nav class="flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-8">
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="about.html">關於我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="index.html#services">服務項目</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="history.html">發展歷程</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="news.html">最新消息</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="join-us.html">加入我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="contact.html">聯絡我們</a>
+                        <a class="nav-link text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors" href="faq.html">常見問題</a>
+                    </div>
+                    <a href="contact.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-accent text-white text-sm font-bold shadow-md transition-transform hover:scale-105">
+                        <span class="truncate">立即開始</span>
+                    </a>
+                </nav>
+            </header>
+            <main class="flex-1">
+                <div class="bg-white dark:bg-gray-800 px-6 py-16 sm:py-24 lg:px-8">
+                    <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700 dark:text-gray-300">
+                        <p class="text-base font-semibold leading-7 text-accent">專業文章</p>
+                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-4xl">Meta廣告指標與測試策略</h1>
+                        <div class="mt-10 max-w-3xl">
+                            <h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark">廣告活動架構與定義</h2>
+                            <div class="mt-6 overflow-x-auto">
+                                <table class="min-w-full divide-y divide-gray-300 dark:divide-gray-600">
+                                    <thead class="bg-gray-50 dark:bg-gray-700">
+                                        <tr>
+                                            <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-text-light dark:text-text-dark sm:pl-6">項目</th>
+                                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-text-light dark:text-text-dark">定義與內容</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-800">
+                                        <tr>
+                                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">廣告系列 (Campaign)</td>
+                                            <td class="whitespace-normal px-3 py-4 text-sm text-gray-500 dark:text-gray-400">廣告目標的整體結構，決定了廣告活動的主要目標，例如提高品牌知名度、引導銷售等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">廣告組 (Ad Set)</td>
+                                            <td class="whitespace-normal px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>設定目標受眾、預算、投放國家/地區、時間流程</strong>等細節。一個廣告系列下可有多個廣告組。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">廣告 (Ad)</td>
+                                            <td class="whitespace-normal px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>設定廣告版位、格式、文案、連結</strong>（如落地頁連結）等具體內容。一個廣告組下可有多個廣告。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h2 class="mt-16 text-2xl font-bold tracking-tight text-text-light dark:text-text-dark">廣告投放關鍵績效指標 (KPIs)</h2>
+                            <div class="mt-6 overflow-x-auto">
+                                <table class="min-w-full divide-y divide-gray-300 dark:divide-gray-600">
+                                    <thead class="bg-gray-50 dark:bg-gray-700">
+                                        <tr>
+                                            <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-text-light dark:text-text-dark sm:pl-6">指標</th>
+                                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-text-light dark:text-text-dark">英文全稱與縮寫</th>
+                                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-text-light dark:text-text-dark">定義與計算方式</th>
+                                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-text-light dark:text-text-dark">範例計算</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-800">
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">每次轉化成本</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>CPA</strong> (Cost Per Acquisition)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>每一個轉化（或獲客）的價格。</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">廣告投入 $10,000，收穫 1,000 個新註冊用戶。<br>CPA = 廣告投入 / 轉化數量 = 10,000 / 1,000 = $10</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">廣告支出回報率</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>ROAS</strong> (Return On Advertising Spend)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>廣告投入的回報比，衡量廣告帶來的營收。</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">廣告投入 $1,000，收穫 2,000 銷售額。<br>ROAS = (廣告營收 / 廣告投入) × 100% = (2,000 / 1,000) × 100% = 200%</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">總投資回報率</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>ROI</strong> (Return On Investment)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>總投資的回報比，衡量整體投資的淨利潤。</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">廣告投入 $1,000，銷售額 $2,000，商品成本 $500。<br>ROI = (總收入 - 總成本) / 總成本 × 100% = (2,000 - 1,500) / 1,500 × 100% ≈ 33.33%</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">連結點擊率</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>CTR</strong> (Click-Through Rate)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">廣告被點擊的次數佔廣告展示次數的比例，衡量廣告的吸引力。</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">-</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">單次點擊費用</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>CPC</strong> (Cost Per Click)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">每獲得一次點擊所需支付的費用。</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">-</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">千次展示費用</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>CPM</strong> (Cost Per Mille)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">廣告展示 1,000 次所需支付的費用。</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">-</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h2 class="mt-16 text-2xl font-bold tracking-tight text-text-light dark:text-text-dark">其他關鍵術語</h2>
+                            <div class="mt-6 overflow-x-auto">
+                                <table class="min-w-full divide-y divide-gray-300 dark:divide-gray-600">
+                                    <thead class="bg-gray-50 dark:bg-gray-700">
+                                        <tr><th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-text-light dark:text-text-dark sm:pl-6">術語</th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-text-light dark:text-text-dark">英文縮寫與全稱</th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-text-light dark:text-text-dark">定義/用途</th></tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-800">
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">再營銷</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>Re-marketing</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">針對先前已與品牌互動過（如造訪網站）的用戶再次投放廣告。</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">單次廣告購買費用</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>CPP</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>單次產品/服務購買所花費的廣告成本。</strong> (此處 CPP 應為 CPA 的變體，特指購買轉化)</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">加購</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>ATC</strong> (Add To Cart)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">用戶將商品加入購物車的行為。</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">像素追蹤</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>Pixel</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">埋設在網站上的程式碼，用於追蹤用戶行為、衡量廣告效果和優化廣告投放。</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">行動呼籲</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>CTA</strong> (Call To Action)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">廣告中鼓勵人們立即採取行動的詞句，如「瞭解更多」、「馬上註冊」、「領取」、「Buy It」等。</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h2 class="mt-16 text-2xl font-bold tracking-tight text-text-light dark:text-text-dark">廣告測試策略與思維（測試階段建議）</h2>
+                            <h3 class="mt-12 text-xl font-bold tracking-tight text-text-light dark:text-text-dark">1. 測受眾（測試廣告組）</h3>
+                            <ul role="list" class="mt-6 space-y-4 text-gray-600 dark:text-gray-400">
+                                <li class="flex gap-x-3"><span>• <strong>結構：</strong> 設定多個廣告組，例如<strong>三個廣告組</strong>。</span></li>
+                                <li class="flex gap-x-3"><span>• <strong>方法：</strong> 每個廣告組設定<strong>一組不同的受眾</strong>，可以選擇 3-5 個不同的興趣、國家/地區、年齡、性別、教育水平等進行組合測試。</span></li>
+                                <li class="flex gap-x-3"><span>• <strong>目的：</strong> 找出表現最佳（最容易轉化）的目標受眾群體。</span></li>
+                            </ul>
+
+                            <h3 class="mt-12 text-xl font-bold tracking-tight text-text-light dark:text-text-dark">2. 測素材（測試廣告）</h3>
+                            <ul role="list" class="mt-6 space-y-4 text-gray-600 dark:text-gray-400">
+                                <li class="flex gap-x-3"><span>• <strong>結構：</strong> 在一個廣告組裡，設定多條廣告，正常建議設定 <strong>2-4 條廣告</strong>。</span></li>
+                                <li class="flex gap-x-3"><span>• <strong>方法：</strong> 採用 <strong>AB 測試法</strong>（如不同圖片、影片、文案、版位組合）進行效果測試。</span></li>
+                                <li class="flex gap-x-3"><span>• <strong>目的：</strong> 找出最吸引受眾、點擊率最高（高 CTR）的廣告創意。</span></li>
+                            </ul>
+
+                            <h3 class="mt-12 text-xl font-bold tracking-tight text-text-light dark:text-text-dark">3. 測試預算與優化建議</h3>
+                            <ul role="list" class="mt-6 space-y-4 text-gray-600 dark:text-gray-400">
+                                <li class="flex gap-x-3"><span>• <strong>前期建議：</strong> 建議採用<strong>廣告組預算</strong>來控制和優化測試過程。</span></li>
+                                <li class="flex gap-x-3"><span>• <strong>預算調整：</strong> 預算金額需根據投放國家/地區的競爭難度進行調整。</span></li>
+                                <li class="flex gap-x-3"><span>• <strong>最低消費：</strong> <strong>每個廣告組一定要設定最低消費</strong>（或最低預算），確保數據量足夠做出判斷。</span></li>
+                                <li class="flex gap-x-3"><span>• <strong>複製優化：</strong> 如果測試中出現<strong>盈利</strong>的廣告組，應<strong>建立與該盈利廣告組相似受眾</strong>的廣告組，再進行投放。</span></li>
+                            </ul>
+
+                            <h3 class="mt-12 text-xl font-bold tracking-tight text-text-light dark:text-text-dark">4. 關閉廣告組的判斷標準（嚴格止損）</h3>
+                            <p class="mt-4">當出現以下任一情況，建議<strong>關閉該廣告組</strong>：</p>
+                            <div class="mt-6 overflow-x-auto">
+                                <table class="min-w-full divide-y divide-gray-300 dark:divide-gray-600">
+                                    <thead class="bg-gray-50 dark:bg-gray-700">
+                                        <tr><th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-text-light dark:text-text-dark sm:pl-6">時間線</th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-text-light dark:text-text-dark">判斷指標</th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-text-light dark:text-text-dark">判斷標準</th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-text-light dark:text-text-dark">行動建議</th></tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-800">
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">投放第一天</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">CPC (單次點擊費用)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>大於 $2 美金</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">費用過高，點擊成本效益差。</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">投放第二天</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">CTR (連結點擊率)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>小於 1.5%</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">廣告素材或受眾組合吸引力不足。</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">投放第三天</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">出單/轉化</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>沒有出單/轉化</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">無法實現轉化目標。</td></tr>
+                                        <tr><td class="py-4 pl-4 pr-3 text-sm font-medium text-text-light dark:text-text-dark sm:pl-6">任一時間點</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">CPP (單次廣告購買費用)</td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400"><strong>大於利潤</strong></td><td class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400">廣告成本已超過單次購買的毛利。</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mt-16">
+                                <a href="news.html" class="text-base font-semibold text-accent hover:text-primary dark:hover:text-blue-400">← 返回最新消息</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="footer-placeholder"></footer>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="fixed bottom-8 right-8 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-accent text-white shadow-lg transition-opacity duration-300 ease-in-out opacity-0 invisible hover:bg-blue-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+    <script src="main.js"></script>
+</body>
+
+</html>
