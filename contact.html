@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
     <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans+TC%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet" />
-    <title>聯絡我們 - Cat's Paw</title>
+    <title>聯絡我們 - Cat's Paw 專業諮詢</title>
+    <meta name="description" content="有任何疑問嗎？歡迎聯絡 Cat's Paw。無論是服務諮詢、工作應徵或其他問題，我們的團隊都將在 24 小時內回覆您，共同探討您的需求。">
     <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
@@ -33,6 +34,23 @@
                 }
             }
         };
+    </script>
+    <!-- Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cat's Paw",
+      "url": "https://www.catspaw.com/",
+      "logo": "https://www.catspaw.com/img/logo.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "service@catspaw.com",
+        "areaServed": "TW",
+        "availableLanguage": ["Chinese", "English"]
+      }
+    }
     </script>
 </head>
 

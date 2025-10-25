@@ -3,10 +3,43 @@
 <meta charset="utf-8"/>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
 <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans+TC%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<title>Cat's Paw - 您的數位成長夥伴</title>
+<title>Cat's Paw - 您的專業數位成長夥伴</title>
+<meta name="description" content="Cat's Paw 是您的專業數位成長夥伴。我們提供精準廣告投放、網站架設、SEO 優化與數據分析服務，透過創新解決方案，驅動您的業務實現卓越成長。">
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#00529B", "accent": "#00A9E0", "neutral-light": "#F0F2F5", "neutral-dark": "#1A202C", "text-light": "#1A202C", "text-dark": "#F7FAFC"}, fontFamily: {display: "Inter"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
+<!-- WebSite & Organization Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "url": "https://www.catspaw.com/",
+      "name": "Cat's Paw",
+      "description": "Cat's Paw 是您的專業數位成長夥伴。我們提供精準廣告投放、網站架設、SEO 優化與數據分析服務，透過創新解決方案，驅動您的業務實現卓越成長。",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.catspaw.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "Cat's Paw",
+      "url": "https://www.catspaw.com/",
+      "logo": "https://www.catspaw.com/img/logo.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body class="bg-neutral-light dark:bg-neutral-dark font-display">
 <div class="relative flex h-auto min-h-screen w-full flex-col">
@@ -67,7 +100,7 @@
                     </div>
                     <div class="mt-12 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
                         <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-1.webp");'></div>
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-1.webp");' role="img" aria-label="精準廣告投放示意圖，包含數據圖表與目標客群圖示"></div>
                             <div>
                                 <p class="text-lg font-semibold text-text-light dark:text-text-dark">精準廣告投放</p>
                                 <div class="service-description mt-2 text-base text-gray-600 dark:text-gray-400">
@@ -78,7 +111,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-2.webp");'></div>
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-2.webp");' role="img" aria-label="靜態網站架設與SEO優化示意圖，包含程式碼與搜尋引擎圖示"></div>
                             <div>
                                 <p class="text-lg font-semibold text-text-light dark:text-text-dark">靜態網站架設 / SEO</p>
                                 <div class="service-description mt-2 text-base text-gray-600 dark:text-gray-400">
@@ -89,7 +122,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-3.webp");'></div>
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-3.webp");' role="img" aria-label="數據分析示意圖，包含各種商業分析圖表"></div>
                             <div>
                                 <p class="text-lg font-semibold text-text-light dark:text-text-dark">數據分析</p>
                                 <div class="service-description mt-2 text-base text-gray-600 dark:text-gray-400">
@@ -100,7 +133,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-4">
-                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-4.webp");'></div>
+                            <div class="w-full aspect-square rounded-lg bg-cover bg-center shadow-[0_8px_30px_rgba(0,169,220,0.25)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,169,220,0.35)] hover:-translate-y-1" style='background-image: url("img/service-4.webp");' role="img" aria-label="電商營運示意圖，包含購物車與商品圖示"></div>
                             <div>
                                 <p class="text-lg font-semibold text-text-light dark:text-text-dark">電商營運 / 開店評估</p>
                                 <div class="service-description mt-2 text-base text-gray-600 dark:text-gray-400">
@@ -153,7 +186,7 @@
             <section class="py-16 sm:py-24">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div class="flex flex-col items-center gap-8 text-center">
-                        <h1 class="text-5xl font-extrabold tracking-tight text-text-light dark:text-text-dark sm:text-6xl">準備好開始轉型了嗎？</h1>
+                        <h2 class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">準備好開始轉型了嗎？</h2>
                         <a href="contact.html" class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-accent text-white text-base font-bold shadow-lg transition-transform hover:scale-105">
                             <span class="truncate">立即開始</span>
                         </a>

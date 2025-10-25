@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
     <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans+TC%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet" />
-    <title>關於我們 - Cat's Paw</title>
+    <title>關於我們 - 認識 Cat's Paw 專業團隊</title>
+    <meta name="description" content="認識 Cat's Paw 的專業團隊。我們由充滿活力的技術專家、行銷顧問與設計師組成，致力於為客戶創造最佳商業成果，驅動您的業務成長。">
     <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
@@ -33,6 +34,26 @@
                 }
             }
         };
+    </script>
+    <!-- Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cat's Paw",
+      "url": "https://www.catspaw.com/",
+      "logo": "https://www.catspaw.com/img/logo.svg",
+      "description": "Cat's Paw 是您的專業數位成長夥伴。我們由充滿活力的技術專家、行銷顧問與設計師組成，致力於為客戶創造最佳商業成果，驅動您的業務成長。",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "service@catspaw.com"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Fermi Logan"
+      }
+    }
     </script>
 </head>
 
@@ -68,7 +89,7 @@
                         <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                             <!-- Team Member 1 -->
                             <li>
-                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/ceo.webp" alt="Photo of Fermi Logan">
+                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/ceo.webp" alt="創辦人 Fermi Logan 的個人照片">
                                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-text-light dark:text-text-dark">
                                     Fermi Logan <a href="fermi-logan.html" class="text-sm font-medium text-accent hover:text-primary">(簡介)</a>
                                 </h3>
@@ -77,35 +98,35 @@
                             </li>
                             <!-- Team Member 2 -->
                          <li>
-                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/q.webp" alt="Photo of John Smith">
+                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/q.webp" alt="顧問 Ericat 的個人照片">
                                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-text-light dark:text-text-dark">Ericat</h3>
                                 <p class="text-base leading-7 text-gray-600 dark:text-gray-400">顧問</p>
                                 <p class="mt-2 text-sm italic text-gray-500 dark:text-gray-400">「沒有什麼比看著別人做成你說辦不到的事還更尷尬的。」</p>
                             </li>
                             <!-- Team Member 3 -->
                          <li>
-                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/u.webp" alt="Photo of Emily White">
+                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/u.webp" alt="UI/UX 設計師 Freya Hawk 的個人照片">
                                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-text-light dark:text-text-dark">Freya Hawk</h3>
                                 <p class="text-base leading-7 text-gray-600 dark:text-gray-400">UI/UX 設計師</p>
                                 <p class="mt-2 text-sm italic text-gray-500 dark:text-gray-400">「設計不只是產品的外觀與觸感，設計是產品如何運作。」</p>
                             </li>
                             <!-- Team Member 4 -->
                          <li>
-                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/htm.webp" alt="Photo of Athena">
+                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/htm.webp" alt="前/後端開發工程師 Athena 的個人照片">
                                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-text-light dark:text-text-dark">Athena</h3>
                                 <p class="text-base leading-7 text-gray-600 dark:text-gray-400">前/後端開發工程師</p>
                                 <p class="mt-2 text-sm italic text-gray-500 dark:text-gray-400">「程式碼永遠不會說謊；註解有時候會。」</p>
                             </li>
                             <!-- Team Member 5 -->
                          <li>
-                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/ai.webp" alt="Photo of Gemini">
+                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/ai.webp" alt="AI 代理人 Gemini 的個人照片">
                                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-text-light dark:text-text-dark">Gemini</h3>
                                 <p class="text-base leading-7 text-gray-600 dark:text-gray-400">AI代理人</p>
                                 <p class="mt-2 text-sm italic text-gray-500 dark:text-gray-400">「我的幻覺，是你下一個偉大點子的起點。」</p>
                             </li>
                             <!-- Team Member 6 -->
                          <li>
-                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/mk.webp" alt="Photo of Peter Chiu">
+                                <img class="h-[300px] w-[300px] rounded-2xl object-cover shadow-lg" src="img/mk.webp" alt="市場行銷經理 Pecar Chiu 的個人照片">
                                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-text-light dark:text-text-dark">Pecar Chiu</h3>
                                 <p class="text-base leading-7 text-gray-600 dark:text-gray-400">市場行銷經理</p>
                                 <p class="mt-2 text-sm italic text-gray-500 dark:text-gray-400">「停止廣告來省錢，就像停止手錶來節省時間一樣。」</p>
